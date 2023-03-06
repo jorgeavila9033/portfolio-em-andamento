@@ -126,6 +126,12 @@ span {
     }
 }
 
+@media (max-width:580px){
+    .container {
+        padding: 150px 0px 0px 30px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .logo {
         position: static;
