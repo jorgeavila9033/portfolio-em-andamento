@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./Images/foto-fundo-redimensioned.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    width: 100%;
+}
+
+.logo{
+    padding: 16px;
+    position: absolute;
+    margin-left: 80px;
+}
+.logo img{
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.cabecalho {
+    padding: 16px;
+    float: right;
+}
+
+.cabecalho li {
+    color: white;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contato {
+    cursor: pointer;
+    color: #4e27bb;
+    background-color: transparent;
+    font-size: 16px;
+    border: 1px solid #4e27bb;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.contato:hover {
+    color: white;
+    background-color: #4e27bb;
+}
+
+.container {
+    color: white;
+    padding: 150px 0px 0px 130px;
+}
+
+.texto1 {
+    font-size: 15px;
+}
+
+.texto2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+span {
+    color: #4e27bb;
+}
+
+.apresentacao{
+    line-break: auto;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.redes-sociais{
+    margin-top: 25px;
+}
+
+.redes-sociais a{
+    border: 1px solid #4e27bb;
+    display: inline-block;
+    color: #4e27bb;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #1d1c1c;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.redes-sociais a:hover {
+    
+    background-color: #333232;
+}
+
+@media screen and (max-width: 600px) {
+    .background {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        background-color: #333232;
+    }
+    .logo {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo {
+        position: static;
+        display: block;
+        margin-left: 0px;
+    }
+    .logo img{
+        margin: auto;
+        display: block;
+    }
+    .cabecalho {
+        text-align: center;
+        margin: auto;
+        float: none;
+    }
+    li {
+        margin: auto;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .background{
+        background-position: bottom left;
+    }
+
+    .container {
+        padding: 40px 0px 0px 20px;
+    }
+}
